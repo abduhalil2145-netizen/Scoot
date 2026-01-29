@@ -1,0 +1,18 @@
+@mixin button {
+    padding: 14px 60px;
+    color: $white;
+    background-color: $yellow;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    &:active {
+        transition: all 100ms ease;
+        background-color: $white;
+        color: $yellow;
+        border: 1px solid $yellow;
+    }
+}

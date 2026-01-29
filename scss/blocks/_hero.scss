@@ -1,0 +1,292 @@
+.hero {
+    display: block;
+    z-index: 2;
+    padding-top: 153px;
+    padding-bottom: 152px;
+    position: relative;
+    background-image: url("../../images/hero_back-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 203px;
+        height: 15px;
+        left: -130px;
+        top: 347px;
+        background-image: url("../../icons/left_yellowpath.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: relative;
+        &::before {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 452px;
+            height: 151px;
+            right: 500px;
+            top: 184.3px;
+            bottom: 54px;
+            background-image: url("../../icons/right_yellowpath.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    &__right-box {
+        display: block;
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 40px;
+    }
+
+    &__title {
+        color: $white;
+        font-family: "Space Mono";
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+    }
+
+    &__mini-box {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__text {
+        width: 405px;
+        margin-bottom: 40px;
+        font-family: "Lexend Deca";
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        color: $white;
+    }
+
+    &__btn {
+        @include button;
+    }
+}
+@media (max-width: 1024px) {
+    .hero {
+        position: relative;
+        background-image: url("../../images/hero_tb-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    &::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 325px;
+      height: 151px;
+      bottom: 39px;
+      left: 0;
+      background-image: url("../../icons/yellow_path-tb.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            display: none;
+            width: 203px;
+            height: 15px;
+            left: -100px;
+            top: 337px;
+            background-image: url("../../icons/left_yellowpath.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &__container {
+            padding: 137px 38px 217px 38px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            position: relative;
+            &::before {
+                display: block;
+                z-index: -1;
+                position: absolute;
+                content: "";
+                display: none;
+                width: 452px;
+                height: 151px;
+                right: 500px;
+                top: 184.3px;
+                bottom: 54px;
+                background-image: url("../../icons/right_yellowpath.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &__right-box {
+            display: block;
+            padding-top: 115px;
+            padding-right: 32px;
+            padding-left: 32px;
+            padding-bottom: 179px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+
+        &__title {
+            width: 573px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -2.5px;
+            color: $white;
+            text-align: center;
+        }
+
+        &__mini-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+
+        &__text {
+            width: 573px;
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            color: $white;
+            text-align: center;
+        }
+
+        &__btn {
+            @include button;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        position: relative;
+        background-image: url("../../images/hero_mb-mage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 140px;
+            height: 151px;
+            bottom: 34px;
+            left: 0;
+            background-image: url("../../icons/yellow_path-mb.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            display: none;
+            width: 203px;
+            height: 15px;
+            left: -100px;
+            top: 337px;
+            background-image: url("../../icons/left_yellowpath.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            position: relative;
+            &::after {
+                z-index: -1;
+                position: absolute;
+                content: "";
+                display: none;
+                width: 452px;
+                height: 151px;
+                right: 500px;
+                top: 184.3px;
+                bottom: 54px;
+                background-image: url("../../icons/right_yellowpath.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &__right-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+            max-width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__title {
+            max-width: 100%;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.79px;
+            color: $white;
+            text-align: center;
+        }
+
+        &__mini-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+
+        &__text {
+            max-width: 100%;
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            color: $white;
+            text-align: center;
+        }
+
+        &__btn {
+            @include button;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    .footer {
+        padding-top: 64px;
+        padding-bottom: 88px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__left-box {
+        }
+        &__list {
+        }
+        &__lists {
+        }
+        &__texts-links {
+        }
+        &__texts {
+        }
+        &__icons-box {
+        }
+    }
+}

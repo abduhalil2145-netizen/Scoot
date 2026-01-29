@@ -1,0 +1,261 @@
+.category {
+    padding-top: 165px;
+    position: relative;
+    z-index: 2;
+    &::after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1050px;
+        height: 15px;
+        left: 0;
+        top: 320px;
+        background-image: url("../../icons/pc__long.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__container {
+        padding-top: 120px;
+        padding-bottom: 83px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 30px;
+    }
+    x &__boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+    }
+    &__image {
+        width: 96px;
+        height: 96px;
+    }
+
+    &__mini-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 27px;
+    }
+
+    &__titles {
+        font-family: "Space Mono";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.89px;
+        color: $dark__navy;
+    }
+
+    &__texts {
+        width: 100%;
+        font-family: "Lexend Deca";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0%;
+        color: $dim__gray;
+    }
+}
+@media (max-width: 1024px) {
+    .category {
+        position: relative;
+        z-index: 2;
+        &::after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 575px;
+            left: 90px;
+            top: 0;
+            background-image: url("../../icons/tb__long.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__container {
+            padding-top: 120px;
+            padding-bottom: 83px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: start;
+            gap: 40px;
+        }
+
+        &__boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 79px;
+        }
+        &__image {
+            width: 96px;
+            height: 96px;
+        }
+
+        &__mini-boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 27px;
+        }
+
+        &__titles {
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.89px;
+            color: $dark__navy;
+        }
+
+        &__texts {
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            color: $dim__gray;
+        }
+    }
+}
+ @media (max-width: 876px) {
+    .category {
+        position: relative;
+        z-index: 2;
+        &::after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 700px;
+            left: 90px;
+            top: 0;
+            background-image: url("../../icons/tb__long.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__container {
+            padding-top: 120px;
+            padding-bottom: 83px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: start;
+            gap: 40px;
+        }
+
+        &__boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 79px;
+        }
+        &__image {
+            width: 96px;
+            height: 96px;
+        }
+
+        &__mini-boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 27px;
+        }
+
+        &__titles {
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.89px;
+            color: $dark__navy;
+        }
+
+        &__texts {
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            color: $dim__gray;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .category {
+        &::after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            display: none;
+            width: 15px;
+            height: 510px;
+            left: 80px;
+            top: 0;
+            background-image: url("../../icons/tb__long.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__container {
+            padding-top: 120px;
+            padding-bottom: 83px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+
+        &__boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+        &__image {
+        }
+
+        &__mini-boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+
+        &__titles {
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.89px;
+            color: $dark__navy;
+            text-align: center;
+        }
+
+        &__texts {
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            color: $dim__gray;
+            text-align: center;
+        }
+    }
+}

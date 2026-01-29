@@ -1,0 +1,159 @@
+
+    .sign {
+        margin-top: 178px;
+        padding-top: 102px;
+        padding-bottom: 102px;
+        background-color: $dark__navy;
+        position: relative;
+        // &::after {
+        //     position: absolute;
+        //     content: "";
+        //     display: block;
+        //     width: 1440px;
+        //     height: 300px;
+        //     bottom: 0;
+        //     background-image: url("../../icons/sign__vector.svg");
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        // }
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &__title {
+            width: 415px;
+            color: $white;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            text-align: start;
+        }
+
+        &__logo-boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &__logo-link {
+        }
+
+        &__logo-icon {
+            vertical-align: middle;
+        }
+    }
+@media (max-width: 1024px) {
+    .sign {
+        padding-top: 62px;
+        padding-bottom: 62px;
+        background-color: $dark__navy;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 768px;
+            height: 158px;
+            bottom: 0;
+            background-image: url("../../icons/sign__vector-tb.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &__title {
+            width: 457px;
+            color: $white;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            text-align: center;
+        }
+
+        &__logo-boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &__logo-link {
+        }
+
+        &__logo-icon {
+            vertical-align: middle;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .sign {
+        padding-top: 88px;
+        padding-bottom: 88px;
+        background-color: $dark__navy;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 375px;
+            height: 181px;
+            bottom: 0;
+            background-image: url("../../icons/sign__vector-mb.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &__title {
+            width: 100%;
+            color: $white;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            text-align: center;
+        }
+
+        &__logo-boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &__logo-link {
+        }
+
+        &__logo-icon {
+            vertical-align: middle;
+        }
+    }
+}
