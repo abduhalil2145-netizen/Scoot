@@ -1,14 +1,15 @@
-.easy {
+.join {
+    padding-top: 120px;
     position: relative;
     &::after {
         position: absolute;
         content: "";
         display: block;
-        width: 510px;
+        width: 741px;
         height: 151px;
         right: 0px;
-        top: 200px;
-        background-image: url("../../icons/easy__vector-pc.svg");
+        top: 330px;
+        background-image: url("../../icons/careers__vector.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -69,17 +70,18 @@
     }
 }
 @media (max-width: 1024px) {
-    .easy {
+    .join {
+        padding-top: 144px;
         position: relative;
         &::after {
             position: absolute;
             content: "";
             display: block;
-            width: 741px;
+            width: 735px;
             height: 151px;
             right: 0;
-            top: 200px;
-            background-image: url("../../icons/easy__vector-tb.svg");
+            top: 340px;
+            background-image: url("../../icons/careers__vector-tb.svg");
         }
         &__container {
             display: flex;
@@ -141,7 +143,8 @@
 }
 
 @media (max-width: 767px) {
-    .easy {
+    .join {
+        padding-top: 72px;
         position: relative;
         &::after {
             position: absolute;
@@ -150,8 +153,8 @@
             width: 349px;
             height: 151px;
             right: 0;
-            top: 165px;
-            background-image: url("../../icons/easy__vector.svg");
+            top: 242px;
+            background-image: url("../../icons/careers__vector-mb.svg");
         }
         &__container {
             display: flex;

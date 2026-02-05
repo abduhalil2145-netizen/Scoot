@@ -1,20 +1,19 @@
-.easy {
+.better {
+    padding-top: 160px;
     position: relative;
     &::after {
         position: absolute;
         content: "";
         display: block;
-        width: 510px;
+        width: 356px;
         height: 151px;
-        right: 0px;
-        top: 200px;
-        background-image: url("../../icons/easy__vector-pc.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        left: -100px;
+        top: 140px;
+        background-image: url("../../icons/better__vector.svg");
     }
     &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
         position: relative;
@@ -22,11 +21,11 @@
             position: absolute;
             content: "";
             display: block;
-            width: 40px;
+            width: 100px;
             height: 445px;
-            right: 0;
+            left: -60px;
             top: 20;
-            background-image: url("../../icons/mask_pc.svg");
+            background-image: url("../../icons/better__mask.svg");
         }
     }
 
@@ -69,17 +68,18 @@
     }
 }
 @media (max-width: 1024px) {
-    .easy {
+    .better {
+        padding-top: 128px;
         position: relative;
         &::after {
             position: absolute;
             content: "";
             display: block;
-            width: 741px;
+            width: 348px;
             height: 151px;
-            right: 0;
-            top: 200px;
-            background-image: url("../../icons/easy__vector-tb.svg");
+            left: 0;
+            top: 80px;
+            background-image: url("../../icons/better__vector-mb.svg")
         }
         &__container {
             display: flex;
@@ -92,11 +92,11 @@
                 position: absolute;
                 content: "";
                 display: block;
-                width: 95px;
+                width: 100px;
                 height: 445px;
-                right: 0;
-                bottom: 260px;
-                background-image: url("../../icons/mask_tb.svg");
+                left: 0;
+                bottom: 250px;
+                background-image: url("../../icons/better__mask.svg");
             }
         }
 
@@ -141,17 +141,20 @@
 }
 
 @media (max-width: 767px) {
-    .easy {
+    .better {
+        padding-top: 120px;
         position: relative;
         &::after {
             position: absolute;
             content: "";
             display: block;
-            width: 349px;
+            width: 348px;
             height: 151px;
-            right: 0;
-            top: 165px;
-            background-image: url("../../icons/easy__vector.svg");
+            left: 0;
+            top: 110px;
+            background-image: url("../../icons/better__vector-mb.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &__container {
             display: flex;
@@ -207,6 +210,7 @@
         }
 
         &__img-vector {
+            width: 311px;
             border-radius: 50%;
         }
     }

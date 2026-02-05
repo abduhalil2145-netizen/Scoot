@@ -1,14 +1,15 @@
-.easy {
+.mobile {
+    padding-top: 120px;
     position: relative;
     &::after {
         position: absolute;
         content: "";
         display: block;
-        width: 510px;
+        width: 541px;
         height: 151px;
         right: 0px;
-        top: 200px;
-        background-image: url("../../icons/easy__vector-pc.svg");
+        top: 250px;
+        background-image: url("../../icons/mobile__vector.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -24,7 +25,7 @@
             display: block;
             width: 40px;
             height: 445px;
-            right: 0;
+            right: 0px;
             top: 20;
             background-image: url("../../icons/mask_pc.svg");
         }
@@ -69,7 +70,8 @@
     }
 }
 @media (max-width: 1024px) {
-    .easy {
+    .mobile {
+        padding-top: 144px;
         position: relative;
         &::after {
             position: absolute;
@@ -78,8 +80,8 @@
             width: 741px;
             height: 151px;
             right: 0;
-            top: 200px;
-            background-image: url("../../icons/easy__vector-tb.svg");
+            top: 305px;
+            background-image: url("../../icons/mobile__vector-tb.svg");
         }
         &__container {
             display: flex;
@@ -92,7 +94,7 @@
                 position: absolute;
                 content: "";
                 display: block;
-                width: 95px;
+                width: 100px;
                 height: 445px;
                 right: 0;
                 bottom: 260px;
@@ -141,7 +143,8 @@
 }
 
 @media (max-width: 767px) {
-    .easy {
+    .mobile {
+        padding-top: 72px;
         position: relative;
         &::after {
             position: absolute;
@@ -151,7 +154,7 @@
             height: 151px;
             right: 0;
             top: 165px;
-            background-image: url("../../icons/easy__vector.svg");
+            background-image: url("../../icons/mobile__vector-mb.svg");
         }
         &__container {
             display: flex;

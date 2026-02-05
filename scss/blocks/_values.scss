@@ -1,0 +1,218 @@
+.values {
+    padding-top: 120px;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__title {
+        width: 100%;
+        font-family: "Space Mono";
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+        text-align: center;
+        color: $dark__navy;
+    }
+    &__boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 56px;
+    }
+    &__scooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 56px;
+    }
+    &__people {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 56px;
+    }
+
+    &__category-title {
+        width: 100%;
+        font-family: "Space Mono";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+        text-align: center;
+        color: $dark__navy;
+    }
+
+    &__category-texts {
+        width: 100%;
+        font-family: "Lexend Deca";
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: $dark__navy;
+    }
+}
+@media (max-width: 1024px) {
+    .values {
+        padding-top: 120px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__title {
+            width: 100%;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            text-align: center;
+            color: $dark__navy;
+        }
+        &__boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+
+        &__category {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+        &__scooter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+        &__people {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+
+        &__category-title {
+            width: 457px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+            text-align: center;
+            color: $dark__navy;
+        }
+
+        &__category-texts {
+            width: 457px;
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $dark__navy;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .values {
+        padding-top: 120px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-area: 64px;
+        }
+
+        &__title {
+            width: 100%;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            text-align: center;
+            color: $dark__navy;
+        }
+        &__boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+
+        &__category {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+        &__scooter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+        &__people {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+        }
+
+        &__category-title {
+            width: 100%;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+            text-align: center;
+            color: $dark__navy;
+        }
+
+        &__category-texts {
+            width: 100%;
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $dark__navy;
+        }
+    }
+}

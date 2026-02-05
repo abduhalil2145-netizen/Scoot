@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+    .card {
+        &__container {
+        }
+
+        &__boxes {
+            background-color: $snow;
+        }
+
+        &__mini-boxes {
+            background-color: $snow;
+        }
+
+        &__titles {
+        }
+
+        &__texts {
+        }
+
+        &__buttons {
+        }
+    }
+}
