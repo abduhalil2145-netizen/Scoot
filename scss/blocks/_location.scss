@@ -1,0 +1,89 @@
+.location {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-image: url("../../images/location.jpg");
+    width: 100%;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        display: none;
+        width: 203px;
+        height: 62px;
+        top: 58px;
+        right: 0;
+        background-image: url("../../icons/about__circle.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__title {
+        font-family: "Space Mono";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.79px;
+        text-align: start;
+        color: $white;
+    }
+}
+@media (max-width: 1024px) {
+    .location {
+        padding-top: 72px;
+        padding-bottom: 72px;
+        background-image: url("../../images/location__tb.jpg");
+        width: 100%;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 203px;
+            height: 62px;
+            top: 58px;
+            right: 0;
+            background-image: url("../../icons/about__circle.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__title {
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.79px;
+            text-align: start;
+            color: $white;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .location {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url("../../images/location__mb.jpg");
+        width: 100%;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: none;
+            width: 203px;
+            height: 62px;
+            top: 58px;
+            right: 0;
+            background-image: url("../../icons/location__circle.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__title {
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.79px;
+            text-align: center;
+            color: $white;
+        }
+    }
+}

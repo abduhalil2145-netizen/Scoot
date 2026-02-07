@@ -1,3 +1,77 @@
+.message {
+    margin-top: 72px;
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        width: 351px;
+        font-family: "Space Mono";
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14px;
+        color: $dark__navy;
+        text-align: start;
+    }
+
+    &__text {
+        width: 445px;
+        font-family: "Space Mono";
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        color: $dark__navy2;
+        text-align: start;
+    }
+
+    &__button {
+        @include button;
+    }
+}
+@media (max-width: 1024px) {
+    .message {
+        margin-top: 72px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &__title {
+            width: 457px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+            color: $dark__navy;
+            text-align: center;
+        }
+
+        &__text {
+            width: 573px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+            color: $dark__navy2;
+            text-align: center;
+        }
+
+        &__button {
+            @include button;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .message {
         margin-top: 72px;
@@ -6,15 +80,33 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 40px;
         }
 
         &__title {
+            width: 100%;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            color: $dark__navy;
+            text-align: center;
         }
 
         &__text {
+            width: 100%;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+            color: $dark__navy2;
+            text-align: center;
         }
 
         &__button {
+            @include button;
         }
     }
 }
