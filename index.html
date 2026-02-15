@@ -13,32 +13,28 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container header__container">
-            <button class="header__open-burger-hidden">
-                <img class="header__open-burger-icon-hidden" width="20" height="16" src="./icons/open_burger.svg" al
-                    t="open__burger">
+            <button class="header__test-button">
+                <img class="header__test-button-icon" src="./icons/open_burger.svg" alt="open__burger-test">
             </button>
             <div class="header__left-box">
-                <a href="#">
-                    <img src="./icons/dark__logo.svg" alt="dark__logo" width="108" height="29">
-                </a>
+                <img src="./icons/dark__logo.svg" alt="logo">
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__lists">
-                            <a class="header__list-links" href="./about.html">
-                                <p class="header__links-texts">About</p>
+                            <a class="header__links" href="">
+                                <p class="header__link-texts">About</p>
                             </a>
                         </li>
                         <li class="header__lists">
-                            <a class="header__list-links" href="./locations.html">
-                                <p class="header__links-texts">Location</p>
+                            <a class="header__links" href="">
+                                <p class="header__link-texts">Location</p>
                             </a>
                         </li>
                         <li class="header__lists">
-                            <a class="header__list-links" href="./careers.html">
-                                <p class="header__links-texts">Careers</p>
+                            <a class="header__links" href="">
+                                <p class="header__link-texts">Careers</p>
                             </a>
                         </li>
                     </ul>
@@ -46,13 +42,35 @@
             </div>
             <button class="header__button">Get Scootin</button>
             <button class="header__open-burger">
-                <img class="header__open-burger-icon" width="20" height="16" src="./icons/open_burger.svg"
-                    alt="open__burger">
+                <img class="header__open-burger-icon" src="./icons/open_burger.svg" alt="open">
+            </button>
+            <button class="header__close-burger">
+                <img class="header__close-burger-icon" src="./icons/close__burger.svg" alt="close">
             </button>
         </div>
-
+        <div class="container header__mb-div">
+            <nav class="header__nav-mb">
+                <ul class="header__list-mb">
+                    <li class="header__lists-mb">
+                        <a class="header__links-mb" href="#">
+                            <p class="header__links-texts-mb">About</p>
+                        </a>
+                    </li>
+                    <li class="header__lists-mb">
+                        <a class="header__links-mb" href="#">
+                            <p class="header__links-texts-mb">Location</p>
+                        </a>
+                    </li>
+                    <li class="header__lists-mb">
+                        <a class="header__links-mb" href="#">
+                            <p class="header__links-texts-mb">Careers</p>
+                        </a>
+                    </li>
+                </ul>
+                <button class="header__mb-button">Get Scotion</button>
+            </nav>
+        </div>
     </header>
-
     <main>
         <section class="hero">
             <div class="container hero__container">
@@ -187,6 +205,7 @@
             </div>
         </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
